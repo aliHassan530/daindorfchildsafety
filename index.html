@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Child Safety Standards (CSAE) – Dein Dorf by Mirjam Espig</title>
+<meta name="description" content="Child Safety Standards of the Dein Dorf app by Mirjam Espig: zero tolerance for child sexual abuse and exploitation (CSAE). Kinderschutzstandards der App Dein Dorf.">
+<style>
+  :root { --ivory:#faf7f2; --paper:#fffdf9; --ink:#231e1a; --muted:#7a6e63; --line:#e2d9cc;
+          --wine:#5e2a2e; --gold:#b08d57; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; scroll-padding-top:5rem; }
+  body { margin:0; background:var(--ivory); color:var(--ink);
+         font:18px/1.75 "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif; }
+  a { color:var(--wine); text-underline-offset:3px; }
+  a:focus-visible, button:focus-visible { outline:2px solid var(--gold); outline-offset:3px; }
+
+  /* Top bar */
+  .top { position:sticky; top:0; z-index:5; background:var(--paper); border-bottom:1px solid var(--line); }
+  .top div { max-width:70rem; margin:0 auto; padding:.9rem 1.5rem; display:flex; align-items:center; justify-content:space-between; }
+  .logo { font-size:1.45rem; font-style:italic; color:var(--wine); letter-spacing:.01em; }
+  .logo small { font-size:.85rem; font-style:normal; color:var(--muted); margin-left:.7rem; }
+  .lang { display:flex; border:1px solid var(--line); border-radius:2px; }
+  .lang button { background:none; border:0; padding:.3rem .95rem; font:inherit; font-size:.9rem; color:var(--muted); cursor:pointer; }
+  .lang button[aria-pressed="true"] { background:var(--wine); color:var(--ivory); }
+
+  /* Hero */
+  .hero { background:var(--wine); color:var(--ivory); text-align:center; padding:4.5rem 1.5rem 4rem; border-bottom:4px solid var(--gold); }
+  .hero p { margin:0; }
+  .hero .kicker { font-style:italic; color:#e3cfa8; }
+  .hero h1 { font-size:2.8rem; line-height:1.15; font-weight:normal; margin:.7rem auto 1rem; max-width:34rem; }
+  .hero .date { font-size:.95rem; color:#d9c7c0; }
+
+  /* At a glance */
+  .glance { max-width:70rem; margin:-2.2rem auto 0; padding:0 1.5rem; display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; position:relative; }
+  .glance div { background:var(--paper); border:1px solid var(--line); border-top:3px solid var(--gold); padding:1rem 1.2rem; font-size:.98rem; line-height:1.5; box-shadow:0 8px 20px -14px rgba(35,30,26,.45); }
+  .glance strong { display:block; font-weight:normal; font-size:1.08rem; color:var(--wine); margin-bottom:.15rem; }
+
+  /* Layout */
+  article { max-width:70rem; margin:0 auto; padding:3.5rem 1.5rem 2rem; display:grid; grid-template-columns:14rem minmax(0,1fr); gap:4rem; }
+  aside nav { position:sticky; top:5.5rem; border-left:1px solid var(--line); padding-left:1.2rem; }
+  aside h3 { font-size:.95rem; font-style:italic; font-weight:normal; color:var(--muted); margin:0 0 .7rem; }
+  aside a { display:block; text-decoration:none; color:var(--ink); font-size:.95rem; line-height:1.4; padding:.3rem 0; }
+  aside a:hover { color:var(--wine); }
+  .body { max-width:42rem; }
+  .body h2 { font-size:1.45rem; font-weight:normal; color:var(--wine); margin:2.6rem 0 .6rem; padding-top:1.6rem; border-top:1px solid var(--line); }
+  .body h2:first-child { margin-top:0; padding-top:0; border:0; }
+  .body h2 span { color:var(--gold); font-style:italic; margin-right:.6rem; }
+  .body p { margin:.6rem 0; }
+  .body ul { margin:.6rem 0; padding-left:1.2rem; }
+  .body li { margin:.25rem 0; }
+  .body li::marker { color:var(--gold); }
+  .note { margin:1.2rem 0; padding:.9rem 1.2rem; background:var(--paper); border:1px solid var(--line); border-left:3px solid var(--wine); }
+  .contact { margin-top:3rem; padding:1.6rem 1.8rem; background:var(--paper); border:1px solid var(--line); border-top:3px solid var(--gold); }
+  .contact h2 { margin:0 0 .5rem !important; padding:0 !important; border:0 !important; }
+
+  .js article[hidden] { display:none; }
+  footer { margin-top:3rem; background:#231e1a; color:#cfc4b6; text-align:center; padding:2.2rem 1.5rem; font-size:.95rem; }
+  footer a { color:#e3cfa8; }
+  footer .logo { color:#e3cfa8; display:block; margin-bottom:.4rem; }
+
+  @media (max-width:860px) {
+    article { grid-template-columns:1fr; gap:0; padding-top:2.5rem; }
+    aside { display:none; }
+    .glance { grid-template-columns:1fr; margin-top:-1.6rem; }
+    .hero h1 { font-size:2rem; }
+    .logo small { display:none; }
+  }
+  @media (max-width:560px) { body { font-size:17px; } .hero { padding:3rem 1.2rem 3.5rem; } }
+</style>
+<style>.wrap{max-width:46rem;margin:0 auto;padding:3rem 1.5rem 1rem}.wrap h2{font-size:1.45rem;font-weight:normal;color:var(--wine);margin:2.2rem 0 .6rem;padding-top:1.4rem;border-top:1px solid var(--line)}.wrap h2 span{color:var(--gold);font-style:italic;margin-right:.6rem}.wrap ul{padding-left:1.2rem}.wrap li::marker{color:var(--gold)}.wrap h1.l{font-size:1.9rem;font-weight:normal;color:var(--wine);margin:2.5rem 0 0}</style>
+</head>
+<body>
+<header class="top"><div><span class="logo">Dein Dorf<small>Gemeinsam statt einsam</small></span><a href="index.html">Privacy Policy</a></div></header>
+<section class="hero"><p class="kicker">Dein Dorf · Mirjam Espig</p><h1>Child Safety Standards</h1><p class="date">Zero tolerance for child sexual abuse and exploitation (CSAE) · Last updated: October 2026 · <a href="#de" style="color:#e3cfa8">Deutsch</a></p></section>
+<main class="wrap" lang="en">
+<h2><span>1.</span>Our commitment</h2>
+<p>“Dein Dorf”, published on Google Play by Mirjam Espig, strictly prohibits child sexual abuse and exploitation (CSAE) in any form. The safety of children is more important than any feature of the app. These standards apply to all users, content and communication in the app.</p>
+<h2><span>2.</span>What is prohibited</h2>
+<ul><li>Child sexual abuse material (CSAM) in any form, including creating, uploading, sharing, requesting or linking to it</li><li>Sexualised content, comments or messages that involve or target minors</li><li>Grooming: contacting a minor to build trust for sexual purposes</li><li>Sexual extortion (sextortion) and sexual solicitation of minors</li><li>Child trafficking, and any content that endangers or exploits children</li></ul>
+<h2><span>3.</span>How to report</h2>
+<p>Every profile, post and chat message can be reported directly in the app, and users can be blocked. You can also report concerns by email to <a href="mailto:info@deindorf.eu">info@deindorf.eu</a>. Reports about child safety are reviewed with the highest priority.</p>
+<h2><span>4.</span>How we respond</h2>
+<ul><li>Violating content is removed immediately</li><li>Accounts involved are permanently banned</li><li>Suspected CSAE and CSAM are reported to the competent authorities and reporting bodies (for example law enforcement and the Internet-Beschwerdestelle in Germany, or NCMEC where applicable)</li><li>We cooperate with authorities and keep relevant evidence as far as the law allows</li></ul>
+<h2><span>5.</span>Legal compliance</h2>
+<p>We comply with the child safety laws that apply to us, including German criminal and youth protection law and EU rules on illegal content online, and we follow Google Play’s Child Safety Standards policy.</p>
+<h2><span>6.</span>Designated contact for child safety</h2>
+<p>Mirjam Espig, Mangersreutherstr. 1, 95326 Kulmbach, Germany<br>Email: <a href="mailto:info@deindorf.eu">info@deindorf.eu</a><br>This contact handles child safety questions from users, Google Play and authorities.</p>
+<h2><span>7.</span>Related documents</h2>
+<p>See also our <a href="index.html">Privacy Policy</a>, which covers data processing and account deletion.</p>
+
+<h1 class="l" id="de" lang="de">Kinderschutzstandards (Deutsch)</h1>
+</main>
+<main class="wrap" lang="de" style="padding-top:0">
+<h2><span>1.</span>Unser Grundsatz</h2>
+<p>„Dein Dorf“, bei Google Play veröffentlicht von Mirjam Espig, verbietet sexuellen Missbrauch und sexuelle Ausbeutung von Kindern (CSAE) in jeder Form. Der Schutz von Kindern steht über jeder Funktion der App. Diese Standards gelten für alle Nutzer, Inhalte und Kommunikation in der App.</p>
+<h2><span>2.</span>Was verboten ist</h2>
+<ul><li>Darstellungen sexuellen Kindesmissbrauchs (CSAM) jeder Art, einschließlich Erstellen, Hochladen, Teilen, Anfordern oder Verlinken</li><li>Sexualisierte Inhalte, Kommentare oder Nachrichten, die Minderjährige betreffen oder an sie gerichtet sind</li><li>Grooming: Kontaktaufnahme mit Minderjährigen, um Vertrauen für sexuelle Zwecke aufzubauen</li><li>Sexuelle Erpressung (Sextortion) und sexuelle Anbahnung gegenüber Minderjährigen</li><li>Kinderhandel sowie alle Inhalte, die Kinder gefährden oder ausbeuten</li></ul>
+<h2><span>3.</span>So meldest du</h2>
+<p>Jedes Profil, jeden Beitrag und jede Chatnachricht kannst du direkt in der App melden; Nutzer kannst du blockieren. Hinweise sind auch per E-Mail an <a href="mailto:info@deindorf.eu">info@deindorf.eu</a> möglich. Meldungen zum Kinderschutz prüfen wir mit höchster Priorität.</p>
+<h2><span>4.</span>Wie wir reagieren</h2>
+<ul><li>Verstoßende Inhalte werden sofort entfernt</li><li>Beteiligte Konten werden dauerhaft gesperrt</li><li>Verdachtsfälle von CSAE und CSAM melden wir den zuständigen Behörden und Meldestellen (zum Beispiel Polizei und Internet-Beschwerdestelle in Deutschland, ggf. NCMEC)</li><li>Wir arbeiten mit Behörden zusammen und sichern relevante Beweise, soweit gesetzlich zulässig</li></ul>
+<h2><span>5.</span>Einhaltung der Gesetze</h2>
+<p>Wir halten die für uns geltenden Kinderschutzgesetze ein, darunter deutsches Straf- und Jugendschutzrecht sowie EU-Regeln zu illegalen Inhalten im Netz, und befolgen die Richtlinie von Google Play zu Kinderschutzstandards.</p>
+<h2><span>6.</span>Ansprechpartnerin für Kinderschutz</h2>
+<p>Mirjam Espig, Mangersreutherstr. 1, 95326 Kulmbach<br>E-Mail: <a href="mailto:info@deindorf.eu">info@deindorf.eu</a><br>Diese Stelle beantwortet Fragen von Nutzern, Google Play und Behörden zum Kinderschutz.</p>
+<h2><span>7.</span>Weitere Dokumente</h2>
+<p>Siehe auch die <a href="index.html">Datenschutzerklärung</a> zu Datenverarbeitung und Kontolöschung.</p>
+
+</main>
+<footer><span class="logo">Dein Dorf</span>Mirjam Espig, Kulmbach &nbsp;|&nbsp; <a href="mailto:info@deindorf.eu">info@deindorf.eu</a> &nbsp;|&nbsp; <a href="index.html">Privacy Policy</a></footer>
+</body>
+</html>
